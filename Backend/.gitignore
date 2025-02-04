@@ -1,0 +1,57 @@
+# Node.js core
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Build output
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Debugging files
+*.swp
+*.swo
+*.bak
+*.pid
+
+# Dependency and package lock files (optional, if you regenerate them)
+package-lock.json
+yarn.lock
+
+# MongoDB data and backup files (if applicable)
+*.mongo
+dump/
+
+# Miscellaneous
+coverage/
+!.github/
+*.local
+*.log
+*.out
+*.gz
