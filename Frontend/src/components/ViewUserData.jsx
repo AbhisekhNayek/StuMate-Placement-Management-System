@@ -6,7 +6,9 @@ import Accordion from "react-bootstrap/Accordion";
 import Table from "react-bootstrap/Table";
 import Image from "react-bootstrap/Image";
 import Toast from "./Toast";
-import { BASE_URL } from "../config/config";
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
 
 function ViewUserData() {
   document.title = "CPMS | User Details";

@@ -40,7 +40,7 @@ const Placement = () => {
     averagePackage: 12, // in LPA
     companiesVisited: 50,
     studentsPlaced: 120,
-    lowestPackage: 6
+    lowestPackage: 6,
   };
 
   // Line chart data (Placements over the months)
@@ -86,7 +86,14 @@ const Placement = () => {
 
   // Radar chart data (Skills or attributes evaluated by recruiters across departments)
   const radarChartData = {
-    labels: ["Technical Skills", "Communication", "Problem Solving", "Teamwork", "Leadership", "Creativity"],
+    labels: [
+      "Technical Skills",
+      "Communication",
+      "Problem Solving",
+      "Teamwork",
+      "Leadership",
+      "Creativity",
+    ],
     datasets: [
       {
         label: "CS",
@@ -118,54 +125,53 @@ const Placement = () => {
   return (
     <>
       <LandNavbar />
-      <div className="min-h-screen bg-black text-white flex items-center justify-center mt-16">
+      <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center mt-16">
+        {/* Heading */}
+        <h1 className="mb-8 text-center bg-gradient-to-b from-green-500 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
+          Placement Statistics
+        </h1>
+
         <div className="container max-w-6xl p-6">
           {/* Charts Section - 2x2 Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-medium text-white mb-6">Placements Over the Months</h2>
+              <h2 className="text-2xl font-medium text-white mb-6">
+                Placements Over the Months
+              </h2>
               <Line data={lineChartData} />
             </div>
             <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-medium text-white mb-6">Companies Visited by Department</h2>
+              <h2 className="text-2xl font-medium text-white mb-6">
+                Companies Visited by Department
+              </h2>
               <Bar data={barChartData} />
             </div>
             <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-medium text-white mb-6">Placement Offers by Company Type</h2>
+              <h2 className="text-2xl font-medium text-white mb-6">
+                Placement Offers by Company Type
+              </h2>
               <Pie data={pieChartData} />
             </div>
             <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-medium text-white mb-6">Skills Evaluated by Recruiters</h2>
+              <h2 className="text-2xl font-medium text-white mb-6">
+                Skills Evaluated by Recruiters
+              </h2>
               <Radar data={radarChartData} />
             </div>
           </div>
 
           {/* Cards Section - Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
-            <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-medium text-white mb-3">Total Placements</h2>
-              <p className="text-2xl text-green-400">{placementStats.totalPlacements}</p>
-            </div>
-            <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-medium text-white mb-3">Highest Package (LPA)</h2>
-              <p className="text-2xl text-green-400">{placementStats.highestPackage} LPA</p>
-            </div>
-            <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-medium text-white mb-3">Average Package (LPA)</h2>
-              <p className="text-2xl text-green-400">{placementStats.averagePackage} LPA</p>
-            </div>
-            <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-medium text-white mb-3">Companies Visited</h2>
-              <p className="text-2xl text-green-400">{placementStats.companiesVisited}</p>
-            </div>
-            <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-medium text-white mb-3">Students Placed</h2>
-              <p className="text-2xl text-green-400">{placementStats.studentsPlaced}</p>
-            </div>
-            <div className="bg-zinc-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-medium text-white mb-3">Lowest Package (LPA)</h2>
-              <p className="text-2xl text-green-400">{placementStats.lowestPackage}</p>
-            </div>
+            {Object.entries(placementStats).map(([key, value]) => (
+              <div key={key} className="bg-zinc-900 p-6 rounded-lg shadow-lg">
+                <h2 className="text-xl font-medium text-white mb-3">
+                  {key.replace(/([A-Z])/g, " $1")}
+                </h2>
+                <p className="text-2xl text-green-400">
+                  {value} {key.includes("Package") ? "LPA" : ""}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -26,7 +26,6 @@ const Contact = () => {
   return (
     <>
       <LandingNavbar />
-
       {/* Contact Form Section */}
       <div className="bg-black min-h-screen text-white flex items-center justify-center mt-12">
         <div className="container max-w-3xl p-6 sm:p-8 bg-black rounded-lg shadow-lg border border-green-500/20 flex flex-col sm:flex-row-reverse">
@@ -43,7 +42,7 @@ const Contact = () => {
 
           {/* Left Section - Contact Form */}
           <div className="sm:w-1/2 w-full space-y-6">
-            <h1 className="text-3xl font-extrabold mb-6 text-center text-white">
+            <h1 className="mb-8 text-center bg-gradient-to-b from-green-500 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
               Contact Us
             </h1>
             <p className="text-green-500/80 text-center mb-6">
@@ -125,7 +124,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <LandFooter/>
+      <LandFooter />
     </>
   );
 };

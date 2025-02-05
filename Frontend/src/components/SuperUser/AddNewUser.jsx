@@ -4,8 +4,9 @@ import { GrFormAdd } from "react-icons/gr";
 import axios from "axios";
 import Toast from "../Toast";
 import ModalBox from "../Modal";
-import { BASE_URL } from "../../config/config";
 import { useLocation } from "react-router-dom";
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function AddNewUser() {
   document.title = "CPMS | Add new user";

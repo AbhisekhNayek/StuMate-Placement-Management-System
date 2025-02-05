@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from '../config/config'
 import Loading from "../components/Loading";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 // Create a context for user authentication
 const UserContext = createContext();

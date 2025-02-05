@@ -28,7 +28,9 @@ const About = () => {
         <div className="container max-w-6xl px-8 py-10">
           {/* About Header */}
           <div className="text-center mt-10">
-            <h1 className="text-5xl font-extrabold text-green-400">About Us</h1>
+            <h1 className="mb-8 text-center bg-gradient-to-b from-green-500 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
+              About Us
+            </h1>
             <p className="text-lg text-gray-300 mt-4">{companyInfo.mission}</p>
           </div>
 

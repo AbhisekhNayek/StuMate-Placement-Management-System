@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-import { BASE_URL } from '../../config/config';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const UploadResume = ({ jobId, fetchJobDetailsOfApplicant }) => {
   const [uploadStatus, setUploadStatus] = useState('');

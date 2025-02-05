@@ -10,7 +10,7 @@ import Toast from '../Toast';
 import ModalBox from '../Modal';
 import { LiaEye } from "react-icons/lia";
 import { PiEyeClosed } from "react-icons/pi";
-import { BASE_URL } from '../../config/config';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function UpdateJobStatus() {
   document.title = 'CPMS | Update Job Application Status';

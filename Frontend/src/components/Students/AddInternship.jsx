@@ -4,7 +4,9 @@ import axios from "axios";
 import { Button, FloatingLabel, Form } from "react-bootstrap";
 import Toast from "../Toast";
 import ModalBox from "../Modal";
-import { BASE_URL } from "../../config/config";
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
 
 function AddInternship() {
   document.title = "CPMS | Add Internships";

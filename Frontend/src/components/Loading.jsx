@@ -1,21 +1,19 @@
 import React from 'react';
-import LogoVid from '../assets/CPMS.mp4';
 
 function LoadingComponent() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center w-full">
-      <div className="flex flex-col justify-between items-center">
-        <video width="350" height="350" autoPlay loop muted>
-          <source src={LogoVid} type="video/mp4" />
-        </video>
-        <div className="flex items-center gap-2 mx-2">
-          <div className="w-8 h-8 border-4 border-[#13325b] border-t-transparent border-solid rounded-full animate-spin"></div>
-          <div className="">
-            <p className="text-xl font-medium pt-3 max-sm:text-base text-[#13325b]">
-              Hold your seat tightly, we are coming...
-            </p>
-          </div>
+      <div className="flex flex-col items-center space-y-6">
+        {/* Rotating Loader with Glowing Effect */}
+        <div className="relative flex items-center justify-center">
+          <div className="w-16 h-16 border-4 border-green-500 border-t-transparent border-solid rounded-full animate-spin"></div>
+          <div className="absolute w-10 h-10 border-4 border-green-400 border-t-transparent border-solid rounded-full animate-spin-slow"></div>
         </div>
+
+        {/* Animated Text */}
+        <p className="text-xl font-medium text-green-500 max-sm:text-base animate-pulse">
+          Hold your seat tightly, we are coming...
+        </p>
       </div>
     </div>
   );

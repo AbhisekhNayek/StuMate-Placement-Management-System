@@ -5,8 +5,9 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Toast from './Toast';
 import ModalBox from './Modal';
-import { BASE_URL } from '../config/config';
 import { useNavigate } from 'react-router-dom';
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function SendNotice() {
   document.title = 'CPMS | Send Notice';

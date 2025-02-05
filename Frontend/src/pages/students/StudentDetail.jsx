@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { BASE_URL } from '../../config/config';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function StudentDetail() {
   const { studentId } = useParams(); 

@@ -4,7 +4,7 @@ import NotificationBox from '../../components/NotificationBox';
 
 // management
 function Home() {
-  document.title = 'CPMS | Management Dashboard';
+  document.title = 'StuMate | Management Dashboard';
 
   return (
     <div className="bg-black min-h-screen text-white">

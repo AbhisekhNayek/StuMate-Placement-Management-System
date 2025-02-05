@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Toast from "../Toast";
 import UploadResume from "./UploadResume";
-import { BASE_URL } from "../../config/config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function UpdatePlacementProfile() {
   document.title = "CPMS | Placement Profile";

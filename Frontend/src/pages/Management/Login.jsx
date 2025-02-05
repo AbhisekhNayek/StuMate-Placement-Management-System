@@ -5,10 +5,11 @@ import Logo from '../../assets/CPMS.png';
 import Toast from '../../components/Toast';
 import isAuthenticated from '../../utility/auth.utility';
 import { Button } from 'react-bootstrap';
-import { BASE_URL } from '../../config/config';
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function LoginManagement() {
-  document.title = 'CPMS | Management Login';
+  document.title = 'StuMate | Management Login';
 
   const navigate = useNavigate();
   const [isLoading, setLoading] = useState(false);

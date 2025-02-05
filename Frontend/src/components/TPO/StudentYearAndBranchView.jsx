@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import axios from 'axios';
 import StudentTable from './StudentTableTemplate';
-import { BASE_URL } from '../../config/config';
 import AccordionPlaceholder from '../AccordionPlaceholder';
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function StudentYearAndBranchView() {
   document.title = 'CPMS | All Students';

@@ -8,7 +8,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import ModalBox from './Modal';
 import Toast from './Toast';
 import TablePlaceholder from './TablePlaceholder';
-import { BASE_URL } from '../config/config';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function AllJobPost() {
   document.title = 'CPMS | Job Listings';

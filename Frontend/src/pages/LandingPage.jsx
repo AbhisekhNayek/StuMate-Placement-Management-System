@@ -8,7 +8,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 
 function LandingPage() {
-  document.title = 'CPMS';
+  document.title = 'StuMate';
   const location = useLocation();
   const navigate = useNavigate();
 

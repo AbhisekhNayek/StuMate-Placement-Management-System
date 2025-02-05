@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import Button from "react-bootstrap/Button";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-``;
 import Form from "react-bootstrap/Form";
 import Toast from "../Toast";
 import ModalBox from "../Modal";

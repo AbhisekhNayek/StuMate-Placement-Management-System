@@ -3,7 +3,7 @@ import AddUserTable from './AddUserTable';
 import Toast from './Toast';
 import ModalBox from './Modal';
 import axios from 'axios';
-import { BASE_URL } from '../config/config';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function ApproveStudent() {
   document.title = 'CPMS | Approve Students';

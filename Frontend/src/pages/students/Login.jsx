@@ -5,10 +5,10 @@ import Logo from "../../assets/CPMS.png";
 import Toast from "../../components/Toast";
 import isAuthenticated from "../../utility/auth.utility";
 import { Button } from "react-bootstrap";
-import { BASE_URL } from "../../config/config";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function Login() {
-  document.title = "CPMS | Student Login";
+  document.title = "StuMate | Student Login";
   const navigate = useNavigate();
   const location = useLocation();
 

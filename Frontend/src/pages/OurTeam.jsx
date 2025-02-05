@@ -86,8 +86,9 @@ const Team = () => {
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
         <div className="container max-w-6xl p-6">
           {/* Heading for the Team section */}
-          <h1 className="text-3xl font-extrabold m-16 text-center text-white">Meet Our Team</h1>
-          
+          <h1 className="m-12 text-center bg-gradient-to-b from-green-500 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
+           Meet Our Team
+        </h1>          
           {/* Team Members Section */}
           <div className="grid gap-6 sm:grid-cols-3 text-justify">
             {teamMembers.map((member, index) => (
