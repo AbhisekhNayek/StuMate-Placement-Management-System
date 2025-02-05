@@ -29,7 +29,7 @@ function LandingNavbar() {
                     />
                   </svg>
                 </div>
-                <span className="text-lg font-semibold text-white">StuMate</span>
+                <span className="text-center bg-gradient-to-b from-green-500 to-green-400 bg-clip-text text-2xl font-bold tracking-tight text-transparent">StuMate</span>
               </button>
             </div>
 

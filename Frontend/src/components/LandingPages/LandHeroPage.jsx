@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeroImg = "/imgaes/statBg.jpg";
+const HeroImg = "/imgaes/statBg.png";
 
 const LandingHeroPage = () => {
   const style = {
@@ -21,10 +21,10 @@ const LandingHeroPage = () => {
 
   return (
     <div id="home" style={style.container}>
-      <h1 className="mb-8 text-center bg-gradient-to-b from-green-400 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
+      <h1 className="mb-8 text-center bg-gradient-to-b from-green-500 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
         Welcome To StuMate
       </h1>
-      <h1 className="mb-8 text-center bg-gradient-to-b from-green-400 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
+      <h1 className="mb-8 text-center bg-gradient-to-b from-green-500 to-green-400/20 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
         Your Gateway To Academic Excellence!
       </h1>
       <p className="text-lg text-green-500 mt-4 max-md:text-base max-sm:text-sm">
