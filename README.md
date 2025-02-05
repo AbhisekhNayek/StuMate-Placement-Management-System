@@ -1,127 +1,188 @@
-# 🎓 **StuMate - Placement Management System** 🚀
+# 🎓 **StuMate - Placement Management System** 🚀  
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [User Roles](#user-roles)
-- [Installation](#installation)
+## 📌 Table of Contents  
+- [📖 Introduction](#-introduction)  
+- [✨ Features](#-features)  
+- [🛠️ Tech Stack](#-tech-stack)  
+- [📁 Project Structure](#-project-structure)  
+- [👥 User Roles](#-user-roles)  
+- [⚙️ Installation](#-installation)  
+  - [🔹 Prerequisites](#-prerequisites)  
+  - [📂 Clone the Repository](#-clone-the-repository)  
+  - [🔧 Backend Setup](#-backend-setup)  
+  - [🎨 Frontend Setup](#-frontend-setup)  
+- [📜 License](#-license)  
 
-## Introduction
-**StuMate** is a **Placement Management System** designed to simplify the placement process at educational institutions. It offers distinct roles for students, TPO (Training and Placement Officer) admin, management admin, and super admin, ensuring an efficient and seamless placement experience. 🎓💼
+---
 
-## Features
-- **Student Portal**: Students can explore available job opportunities, apply for placements, and monitor their application status. 🧑‍🎓📈
-- **TPO Admin Portal**: TPO admins can manage job postings, schedule interviews, and track student progress. 🧑‍💼📋
-- **Management Admin Portal**: Management admins can oversee the entire placement process, view reports, and analyze placement data. 📊📅
-- **Super Admin Portal**: The super admin has the ability to manage system settings, user accounts, and oversee TPO and management admins. 🔧🔐
+## 📖 Introduction  
+🎓 **StuMate** is a **Placement Management System** designed to streamline the placement process at educational institutions. It ensures smooth coordination between students, TPO (Training and Placement Officer) admins, management admins, and super admins. **Empower students, simplify management, and enhance placements!** 🚀💼  
 
-## Tech Stack
-- **Frontend**: Vite + React.js, Tailwind CSS, Bootstrap 🎨⚛️
-- **Backend**: Node.js, Express.js 🖥️
-- **Database**: MongoDB 🗄️
-- **Authentication**: JSON Web Tokens (JWT) 🔑
-- **Styling**: Tailwind CSS, Bootstrap 💅
+---
 
-## Project Structure
+## ✨ Features  
+### 🧑‍🎓 **Student Portal**  
+✅ Explore job opportunities 🔍  
+✅ Apply for placements 📄  
+✅ Track application status 📊  
+
+### 🏢 **TPO Admin Portal**  
+✅ Manage job postings 📝  
+✅ Schedule interviews 📅  
+✅ Track student progress 📈  
+
+### 📊 **Management Admin Portal**  
+✅ Oversee the placement process 🏛️  
+✅ Generate reports 📑  
+✅ Analyze placement data 📉  
+
+### 🔐 **Super Admin Portal**  
+✅ Manage system settings ⚙️  
+✅ Handle user accounts 👥  
+✅ Oversee admins and ensure smooth operations 🔍  
+
+---
+
+## 🛠️ Tech Stack  
+| 🔹 Technology | 🔹 Stack Used |
+|--------------|-------------|
+| 🌐 **Frontend** | Vite + React.js, Tailwind CSS, Bootstrap 🎨⚛️ |
+| 🖥️ **Backend** | Node.js, Express.js ⚙️ |
+| 🗄️ **Database** | MongoDB 💾 |
+| 🔑 **Authentication** | JSON Web Tokens (JWT) 🔐 |
+| 💅 **Styling** | Tailwind CSS, Bootstrap 🎨 |
+
+---
+
+## 📁 Project Structure  
 ```plaintext
-├── frontend
-│   ├── public
-│   ├── src
-|   |   ├── api
-|   |   ├── assets
-│   │   ├── components
-│   │   |   ├──LandingPages
-│   │   |   └──students
-│   │   ├── config
-│   │   ├── context
-│   │   ├── hooks
-│   │   ├── pages
-│   │   ├── styles
-│   │   ├── utility
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── .gitignore
-│   ├── .eslint.config.js
-│   ├── index.html
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── postcss.config.js
-│   ├── tailwind.config.js
-│   └── vite.config.js
-├── backend
-│   ├── config
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   ├── public
-│   │   └──  offerLetter
-│   │   └──  resumes
-│   │   └──  profileImgs
-│   │         └── default
-│   ├── routes
-│   ├── .env (NOTE: YOU NEED TO CREATE THIS FILE)
-│   ├── .gitignore
-│   ├── index.js
-│   ├── package.json
-│   └── package-lock.json
-└── README.md
+📦 StuMate-Placement-Management-System
+├── 🖥️ frontend
+│   ├── 🌍 public
+│   ├── 📂 src
+│   │   ├── 🔗 api
+│   │   ├── 🎨 assets
+│   │   ├── 🏗️ components
+│   │   │   ├── 🏠 LandingPages
+│   │   │   └── 🎓 students
+│   │   ├── ⚙️ config
+│   │   ├── 🌐 context
+│   │   ├── 🔄 hooks
+│   │   ├── 📜 pages
+│   │   ├── 💄 styles
+│   │   ├── 🛠️ utility
+│   │   ├── 🚀 App.jsx
+│   │   └── 🔗 main.jsx
+│   ├── 📜 .gitignore
+│   ├── 📜 .eslint.config.js
+│   ├── 📜 index.html
+│   ├── 📜 package-lock.json
+│   ├── 📜 package.json
+│   ├── 📜 postcss.config.js
+│   ├── 📜 tailwind.config.js
+│   └── 📜 vite.config.js
+├── 🔙 backend
+│   ├── ⚙️ config
+│   ├── 🏗️ controllers
+│   ├── 🛡️ middleware
+│   ├── 📄 models
+│   ├── 🌍 public
+│   │   ├── 📜 offerLetter
+│   │   ├── 📜 resumes
+│   │   ├── 🖼️ profileImgs
+│   │   │   └── 🏞️ default
+│   ├── 🛤️ routes
+│   ├── 📜 .env (⚠️ NOTE: YOU NEED TO CREATE THIS FILE)
+│   ├── 📜 .gitignore
+│   ├── 🚀 index.js
+│   ├── 📜 package.json
+│   └── 📜 package-lock.json
+└── 📜 README.md
 ```
 
-## User Roles
-- **Students**: Students can view and apply for job opportunities, update their profiles, and track their application status. 🧑‍🎓💼
-- **TPO Admin**: TPO admins manage job postings, student applications, and interview schedules. 👔📝
-- **Management Admin**: Management admins oversee the placement process, generate reports, and analyze placement data. 📊🖥️
-- **Super Admin**: The super admin manages the overall system, including user accounts and system settings. 🔧🔒
+---
 
-## Installation
+## 👥 User Roles  
+👨‍🎓 **Students**  
+- 🔎 View and apply for job opportunities  
+- 📝 Update their profiles  
+- 📊 Track application status  
 
-### Prerequisites
-- Node.js and npm installed
-- MongoDB installed and running
+🧑‍💼 **TPO Admin**  
+- 📌 Manage job postings  
+- 🗓️ Handle student applications  
+- 📋 Schedule interviews  
 
-### Clone the Repository
+🏛️ **Management Admin**  
+- 📑 Oversee the placement process  
+- 📈 Generate reports  
+- 🔍 Analyze placement data  
+
+🛠️ **Super Admin**  
+- ⚙️ Manage system settings  
+- 👥 Handle user accounts  
+- 🔒 Oversee the entire system  
+
+---
+
+## ⚙️ Installation  
+
+### 🔹 Prerequisites  
+✅ Install **Node.js** and **npm**  
+✅ Install and run **MongoDB**  
+
+### 📂 Clone the Repository  
 ```bash
-git clone https://github.com/moinmn/stumate-placement-management-system.git
-cd stumate-placement-management-system
+git clone https://github.com/AbhisekhNayek/Stumate-Placement-Management-System.git
+cd Stumate-Placement-Management-System
 ```
 
-### Backend Setup
-1. Navigate to the `backend` folder:
+---
+
+### 🔧 Backend Setup  
+1️⃣ Navigate to the `Backend` folder:  
    ```bash
-   cd backend
-   ```
-2. Install the necessary packages:
+   cd Backend
+   ```  
+2️⃣ Install the necessary packages:  
    ```bash
    npm install
-   ```
-3. Create a `.env` file for environment variables:
+   ```  
+3️⃣ Create a `.env` file and add:  
    ```env
+   PORT=your_port_no
    MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret
    ```
-4. Start the backend server:
+4️⃣ Start the backend server:  
    ```bash
    npm start
-   ```
+   ```  
 
-### Frontend Setup
-1. Navigate to the `frontend` folder:
+---
+
+### 🎨 Frontend Setup  
+1️⃣ Navigate to the `Frontend` folder:  
    ```bash
-   cd frontend
-   ```
-2. Install the necessary packages:
+   cd Frontend
+   ```  
+2️⃣ Install the necessary packages:  
    ```bash
    npm install
+   ```  
+3️⃣ Create a `.env` file in the `frontend` directory and add:  
+   ```env
+   BACKEND_API_URL=your_api_url
+   VITE_BASE_URL=your_frontend_url
    ```
-3. Start the frontend development server:
+4️⃣ Start the frontend development server:  
    ```bash
    npm run dev
-   ```
+   ```  
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 📜
-```
+---
 
-This README uses emojis to make it more engaging and readable, and it organizes information to make it easy to follow for developers setting up the project.
+## 📜 License  
+📌 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details. 📄  
+
+🚀 **Enjoy building with StuMate and simplify placement management!** 🎓💼  
