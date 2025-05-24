@@ -1,4 +1,4 @@
-import User from "../../models/user.model.js";
+import User from "../../Models/user.model.js";
 
 // Update any user data by admin
 const UpdateProfile = async (req, res) => {

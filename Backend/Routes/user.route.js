@@ -1,5 +1,5 @@
 import express from 'express';
-import uploadUserProfile from '../config/profilePhoto.config.js';
+import uploadUserProfile from '../Config/profilePhoto.config.js';
 import authenticateToken from '../Middlewares/auth.middleware.js';
 
 // User Controller Methods

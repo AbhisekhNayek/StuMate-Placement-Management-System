@@ -1,4 +1,4 @@
-import User from "../../models/user.model.js";
+import User from "../../Models/user.model.js";
 
 const UpdatePhoto = async (req, res) => {
   const file = req.file;
