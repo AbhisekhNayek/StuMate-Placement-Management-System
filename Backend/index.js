@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import mongodb from './config/db.js';
+import connectDB from './config/db.js';
 
 // Import Routes
 import userRoutes from './Routes/user.route.js';
@@ -23,7 +23,7 @@ app.use('/resume', express.static(path.join(path.resolve(), 'public/resumes')));
 app.use('/offerLetter', express.static(path.join(path.resolve(), 'public/offerLetter')));
 
 // Database Connection
-mongodb();
+connectDB();
 
 app.get('/', (req, res)=>{
   res.send('Welcome To StuMate Backend')
