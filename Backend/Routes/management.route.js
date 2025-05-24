@@ -15,7 +15,7 @@ import {
     getAllNotices,
     deleteNotice,
     getNotice,
-} from '../controllers/Management/notice.controller.js';
+} from '../Controllers/Management/notice.controller.js';
 
 // Initialize the router
 const router = express.Router();
