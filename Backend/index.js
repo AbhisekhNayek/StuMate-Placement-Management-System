@@ -16,7 +16,12 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+
+//CORS
+app.use(cors({
+  origin: process.env.CLIENT_ORIGIN,
+  credentials: true,
+}));
 
 // Static File Serving
 app.use('/profileImages', express.static(path.join(path.resolve(), 'public/profileImages')));
