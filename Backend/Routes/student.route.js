@@ -1,8 +1,8 @@
 import express from 'express';
 
 // Multer configurations for file uploads
-import uploadResume from '../Config/uploadResume.config.js';
-import uploadOfferLetter from '../Config/uploadOffer.config.js';
+import uploadResume from '../config/uploadResume.config.js';
+import uploadOfferLetter from '../config/uploadOffer.config.js';
 
 // Middleware
 import authenticateToken from '../Middlewares/auth.middleware.js';
