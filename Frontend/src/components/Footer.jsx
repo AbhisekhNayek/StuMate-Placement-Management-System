@@ -6,14 +6,14 @@ function Footer({ isSidebarVisible }) {
       
       <div className="flex flex-col md:flex-row md:items-center text-center md:text-left">
         <span className="opacity-80">Built with ❤️ by</span>
-        <a href="https://www.linkedin.com/in/moinnaik/" target="_blank" rel="noopener noreferrer" className="ml-1 font-semibold text-green-400 hover:text-green-300 transition">StuMate</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" className="ml-1 font-semibold text-green-400 hover:text-green-300 transition">StuMate</a>
       </div>
       
-      <div className="opacity-80 mt-2 md:mt-0">&copy; {new Date().getFullYear()} CPMS. All Rights Reserved.</div>
+      <div className="opacity-80 mt-2 md:mt-0">&copy; {new Date().getFullYear()} StuMate All Rights Reserved.</div>
       
       <div className="opacity-80 mt-2 md:mt-0 flex items-center gap-1">
         <span>Version</span>
-        <span className="font-semibold">1.0.1</span>
+        <span className="font-semibold">1.1.1</span>
       </div>
     </footer>
   );
